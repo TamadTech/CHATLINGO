@@ -21,10 +21,10 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 /* ── Typed-text hero effect ─────────────────────────────────── */
 const phrases = [
-  'Full-Stack Developer',
-  'UI/UX Enthusiast',
-  'Open-Source Contributor',
-  'Problem Solver',
+  'Senior Program Manager',
+  'PMP-Certified Leader',
+  'Cloud & AI Specialist',
+  'Agile Practitioner',
 ];
 let phraseIdx = 0;
 let charIdx   = 0;
@@ -88,7 +88,7 @@ const counterObserver = new IntersectionObserver((entries) => {
     const step   = Math.ceil(target / 50);
     const tick   = () => {
       current = Math.min(current + step, target);
-      el.textContent = current + (target >= 100 ? '+' : '+');
+      el.textContent = current;
       if (current < target) requestAnimationFrame(tick);
     };
     tick();

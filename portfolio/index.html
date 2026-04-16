@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Rivera — Portfolio</title>
+  <title>Carsar Addo — Senior Program Manager</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +13,11 @@
 
   <!-- ── Navigation ── -->
   <nav class="nav" id="nav">
-    <a href="#hero" class="nav__logo">AR</a>
+    <a href="#hero" class="nav__logo">CA</a>
     <ul class="nav__links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#programs">Programs</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="nav__cta">Contact</a></li>
     </ul>
@@ -30,23 +30,33 @@
   <section class="hero" id="hero">
     <div class="hero__content">
       <p class="hero__greeting">Hi, I'm</p>
-      <h1 class="hero__name">Alex Rivera</h1>
+      <h1 class="hero__name">Carsar Addo</h1>
       <h2 class="hero__title">
         <span class="typed" id="typed"></span>
       </h2>
+      <div class="hero__badges">
+        <span class="badge badge--pmp">PMP</span>
+        <span class="badge badge--csm">CSM</span>
+        <span class="badge badge--oci">OCI</span>
+        <span class="badge badge--itil">ITIL</span>
+      </div>
       <p class="hero__tagline">
-        I build clean, fast, and accessible web experiences that people love to use.
+        Driving enterprise transformation through strategic program leadership, cloud innovation,
+        and cross-functional team alignment that delivers measurable business outcomes.
       </p>
       <div class="hero__actions">
-        <a href="#projects" class="btn btn--primary">View My Work</a>
-        <a href="resume.pdf" class="btn btn--outline" download>Download CV</a>
+        <a href="#programs" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
       </div>
     </div>
     <div class="hero__visual" aria-hidden="true">
       <div class="blob"></div>
       <div class="avatar">
-        <span>AR</span>
+        <span>CA</span>
       </div>
+      <div class="hero__float hero__float--1">&#128200;</div>
+      <div class="hero__float hero__float--2">&#9729;</div>
+      <div class="hero__float hero__float--3">&#127775;</div>
     </div>
     <a href="#about" class="hero__scroll" aria-label="Scroll down">&#8595;</a>
   </section>
@@ -58,36 +68,58 @@
       <div class="about__grid">
         <div class="about__text">
           <p>
-            I'm a <strong>full-stack developer</strong> with 4+ years of experience turning
-            ideas into production-ready products. I care deeply about code quality,
-            performance, and user experience.
+            I'm a <strong>Senior Program Manager</strong> with 10+ years of experience delivering
+            enterprise-scale technology programs in healthcare IT, cloud migration, and AI/ML
+            platforms. I specialize in aligning business strategy with technical execution to
+            drive measurable ROI.
           </p>
           <p>
-            When I'm not coding, you'll find me contributing to open-source projects,
-            exploring machine learning, or hiking trails in the mountains.
+            I've led cross-functional teams of 30+ across Oracle Health, Anthem, Surescripts, and
+            other industry leaders — managing portfolios exceeding <strong>$30M</strong> and
+            consistently achieving 99% on-time delivery. My approach combines rigorous
+            Agile/Scrum methodology with stakeholder-first thinking.
+          </p>
+          <p>
+            Outside of work, I'm passionate about mentoring emerging tech leaders, exploring
+            AI/ML applications in healthcare, and community engagement in the Twin Cities area.
           </p>
           <ul class="about__facts">
-            <li><span class="fact__label">Location</span> San Francisco, CA</li>
-            <li><span class="fact__label">Email</span> alex@example.com</li>
-            <li><span class="fact__label">Availability</span> Open to opportunities</li>
+            <li><span class="fact__label">Location</span> Minneapolis, MN</li>
+            <li><span class="fact__label">Email</span> carsar.addo@email.com</li>
+            <li><span class="fact__label">LinkedIn</span> linkedin.com/in/carsaraddo</li>
+            <li><span class="fact__label">Focus</span> Enterprise IT · Cloud · Healthcare</li>
           </ul>
         </div>
         <div class="about__stats">
-          <div class="stat">
-            <span class="stat__number" data-target="4">0</span>
-            <span class="stat__label">Years Experience</span>
+          <div class="stat stat--highlight">
+            <div class="stat__value-row">
+              <span class="stat__number" data-target="10">0</span>
+              <span class="stat__suffix">yrs</span>
+            </div>
+            <span class="stat__label">Experience</span>
           </div>
           <div class="stat">
-            <span class="stat__number" data-target="30">0</span>
-            <span class="stat__label">Projects Shipped</span>
+            <div class="stat__value-row">
+              <span class="stat__prefix">$</span>
+              <span class="stat__number" data-target="30">0</span>
+              <span class="stat__suffix">M+</span>
+            </div>
+            <span class="stat__label">Portfolio Managed</span>
           </div>
           <div class="stat">
-            <span class="stat__number" data-target="12">0</span>
-            <span class="stat__label">Happy Clients</span>
+            <div class="stat__value-row">
+              <span class="stat__number" data-target="99">0</span>
+              <span class="stat__suffix">%</span>
+            </div>
+            <span class="stat__label">On-Time Delivery</span>
           </div>
           <div class="stat">
-            <span class="stat__number" data-target="500">0</span>
-            <span class="stat__label">GitHub Stars</span>
+            <div class="stat__value-row">
+              <span class="stat__prefix">$</span>
+              <span class="stat__number" data-target="10">0</span>
+              <span class="stat__suffix">M+ ARR</span>
+            </div>
+            <span class="stat__label">Revenue Impact</span>
           </div>
         </div>
       </div>
@@ -97,75 +129,75 @@
   <!-- ── Skills ── -->
   <section class="section section--alt" id="skills">
     <div class="container">
-      <h2 class="section__title">Skills &amp; Technologies</h2>
+      <h2 class="section__title">Skills &amp; Expertise</h2>
 
       <div class="skills__grid">
 
         <div class="skill-card">
-          <div class="skill-card__icon">&#128187;</div>
-          <h3>Frontend</h3>
+          <div class="skill-card__icon">&#128203;</div>
+          <h3>Program Management</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <span>React / Next.js</span>
+              <span>Agile / Scrum / SAFe</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="95"></div></div>
+            </li>
+            <li class="skill-item">
+              <span>Risk &amp; Stakeholder Management</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="92"></div></div>
             </li>
             <li class="skill-item">
-              <span>TypeScript</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
-            </li>
-            <li class="skill-item">
-              <span>CSS / Tailwind</span>
+              <span>Budget &amp; Resource Planning</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
             </li>
             <li class="skill-item">
-              <span>Vue.js</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon">&#9881;</div>
-          <h3>Backend</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span>Node.js / Express</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
-            </li>
-            <li class="skill-item">
-              <span>Python / FastAPI</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
-            </li>
-            <li class="skill-item">
-              <span>PostgreSQL</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="78"></div></div>
-            </li>
-            <li class="skill-item">
-              <span>GraphQL</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+              <span>Strategic Roadmapping</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
             </li>
           </ul>
         </div>
 
         <div class="skill-card">
           <div class="skill-card__icon">&#9729;</div>
-          <h3>DevOps &amp; Cloud</h3>
+          <h3>Cloud &amp; Technology</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <span>Docker / Kubernetes</span>
+              <span>Oracle Cloud Infrastructure (OCI)</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <span>AWS / Azure</span>
               <div class="skill-bar"><div class="skill-bar__fill" data-width="82"></div></div>
             </li>
             <li class="skill-item">
-              <span>AWS</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+              <span>EHR / HL7 / FHIR</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
             </li>
             <li class="skill-item">
-              <span>CI/CD (GitHub Actions)</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
+              <span>AI / ML Program Delivery</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="78"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">&#128202;</div>
+          <h3>Tools &amp; Analytics</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span>Jira / Confluence / ADO</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="95"></div></div>
             </li>
             <li class="skill-item">
-              <span>Linux / Bash</span>
-              <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+              <span>Power BI / Tableau</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+            </li>
+            <li class="skill-item">
+              <span>MS Project / Smartsheet</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="92"></div></div>
+            </li>
+            <li class="skill-item">
+              <span>SQL / Python (Analytics)</span>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="72"></div></div>
             </li>
           </ul>
         </div>
@@ -173,139 +205,178 @@
       </div>
 
       <div class="tags">
-        <span class="tag">Git</span>
-        <span class="tag">REST APIs</span>
-        <span class="tag">Jest</span>
-        <span class="tag">Figma</span>
-        <span class="tag">Redis</span>
-        <span class="tag">MongoDB</span>
-        <span class="tag">Prisma</span>
-        <span class="tag">WebSockets</span>
-        <span class="tag">OAuth</span>
-        <span class="tag">Agile / Scrum</span>
+        <span class="tag">PMP</span>
+        <span class="tag">CSM</span>
+        <span class="tag">OCI Certified</span>
+        <span class="tag">ITIL</span>
+        <span class="tag">Six Sigma</span>
+        <span class="tag">OKRs</span>
+        <span class="tag">Change Management</span>
+        <span class="tag">Vendor Management</span>
+        <span class="tag">HIPAA</span>
+        <span class="tag">SOX Compliance</span>
+        <span class="tag">DevOps</span>
+        <span class="tag">CI/CD</span>
       </div>
     </div>
   </section>
 
-  <!-- ── Projects ── -->
-  <section class="section" id="projects">
+  <!-- ── Programs ── -->
+  <section class="section" id="programs">
     <div class="container">
-      <h2 class="section__title">Projects</h2>
+      <h2 class="section__title">Programs &amp; Initiatives</h2>
 
       <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="api">API</button>
-        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="aiml">AI / ML</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+        <button class="filter-btn" data-filter="finance">Finance</button>
       </div>
 
       <div class="projects__grid">
 
-        <article class="project-card" data-category="web">
+        <article class="project-card" data-category="cloud">
           <div class="project-card__img project-card__img--1">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">$10M</span>
+                <span class="kpi-label">Budget</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">99.9%</span>
+                <span class="kpi-label">Uptime</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
-              <span class="tag tag--sm">React</span>
-              <span class="tag tag--sm">Node.js</span>
-              <span class="tag tag--sm">PostgreSQL</span>
+              <span class="tag tag--sm">OCI</span>
+              <span class="tag tag--sm">EHR</span>
+              <span class="tag tag--sm">FHIR</span>
             </div>
-            <h3>TaskFlow</h3>
-            <p>A real-time project management app with drag-and-drop boards, team collaboration, and analytics dashboard.</p>
+            <h3>Oracle Health Cloud Migration</h3>
+            <p>Led enterprise EHR migration to Oracle Cloud Infrastructure for a 1,200-bed health system. Delivered on time with 99.9% system availability and zero data loss.</p>
           </div>
         </article>
 
-        <article class="project-card" data-category="api">
+        <article class="project-card" data-category="aiml">
           <div class="project-card__img project-card__img--2">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">$3M</span>
+                <span class="kpi-label">Revenue Impact</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">90%</span>
+                <span class="kpi-label">ML Accuracy</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
+              <span class="tag tag--sm">AI/ML</span>
               <span class="tag tag--sm">Python</span>
-              <span class="tag tag--sm">FastAPI</span>
-              <span class="tag tag--sm">Docker</span>
+              <span class="tag tag--sm">AWS</span>
             </div>
-            <h3>OpenWeather API Wrapper</h3>
-            <p>A high-performance REST API wrapping multiple weather providers with caching, rate-limiting, and a unified schema.</p>
+            <h3>Clinical AI Analytics Platform</h3>
+            <p>Spearheaded delivery of a predictive analytics platform integrating ML models into clinical workflows, improving early diagnosis rates and generating $3M in new ARR.</p>
           </div>
         </article>
 
-        <article class="project-card" data-category="ml">
+        <article class="project-card" data-category="healthcare">
           <div class="project-card__img project-card__img--3">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">50+</span>
+                <span class="kpi-label">Teams</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">99%</span>
+                <span class="kpi-label">On-Time</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
-              <span class="tag tag--sm">Python</span>
-              <span class="tag tag--sm">PyTorch</span>
-              <span class="tag tag--sm">Next.js</span>
+              <span class="tag tag--sm">Anthem</span>
+              <span class="tag tag--sm">HL7</span>
+              <span class="tag tag--sm">SAFe</span>
             </div>
-            <h3>SentimentLens</h3>
-            <p>A fine-tuned BERT model with a web interface for real-time sentiment analysis of product reviews and social media.</p>
+            <h3>Anthem Member Portal Modernization</h3>
+            <p>Orchestrated full modernization of Anthem's member-facing digital platform across 50+ engineering teams, improving member NPS by 28 points and reducing call volume 35%.</p>
           </div>
         </article>
 
-        <article class="project-card" data-category="web">
+        <article class="project-card" data-category="healthcare">
           <div class="project-card__img project-card__img--4">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">$10M</span>
+                <span class="kpi-label">ARR</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">99%</span>
+                <span class="kpi-label">Uptime SLA</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
-              <span class="tag tag--sm">Vue.js</span>
-              <span class="tag tag--sm">Firebase</span>
-              <span class="tag tag--sm">Stripe</span>
+              <span class="tag tag--sm">Surescripts</span>
+              <span class="tag tag--sm">e-Rx</span>
+              <span class="tag tag--sm">HIPAA</span>
             </div>
-            <h3>ShopEase</h3>
-            <p>A full-featured e-commerce storefront with cart, checkout, Stripe payments, and an admin inventory dashboard.</p>
+            <h3>Surescripts e-Prescribing Network</h3>
+            <p>Managed delivery of Surescripts' national e-prescribing platform serving 300M+ patients, achieving $10M ARR growth and maintaining 99% network uptime across 1.5M daily transactions.</p>
           </div>
         </article>
 
-        <article class="project-card" data-category="api">
+        <article class="project-card" data-category="finance">
           <div class="project-card__img project-card__img--5">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">$5M</span>
+                <span class="kpi-label">Cost Savings</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">30%</span>
+                <span class="kpi-label">Faster Processing</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
-              <span class="tag tag--sm">Node.js</span>
-              <span class="tag tag--sm">GraphQL</span>
-              <span class="tag tag--sm">Redis</span>
+              <span class="tag tag--sm">Allianz</span>
+              <span class="tag tag--sm">Azure</span>
+              <span class="tag tag--sm">SOX</span>
             </div>
-            <h3>AuthKit</h3>
-            <p>A plug-and-play authentication microservice supporting OAuth2, JWT refresh tokens, and RBAC policies.</p>
+            <h3>Allianz Life Digital Transformation</h3>
+            <p>Led a $5M digital transformation program modernizing life insurance policy processing, cutting cycle time by 30% and achieving $5M in annual operational savings.</p>
           </div>
         </article>
 
-        <article class="project-card" data-category="ml">
+        <article class="project-card" data-category="cloud">
           <div class="project-card__img project-card__img--6">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub</a>
+            <div class="project-card__kpi">
+              <div class="kpi-item">
+                <span class="kpi-number">30+</span>
+                <span class="kpi-label">Engineers</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">99.9%</span>
+                <span class="kpi-label">Bug Reduction</span>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__tags">
-              <span class="tag tag--sm">Python</span>
-              <span class="tag tag--sm">OpenCV</span>
-              <span class="tag tag--sm">Flask</span>
+              <span class="tag tag--sm">MentorMate</span>
+              <span class="tag tag--sm">Agile</span>
+              <span class="tag tag--sm">DevOps</span>
             </div>
-            <h3>VisionCount</h3>
-            <p>Computer vision system for real-time crowd density estimation using YOLOv8, deployed on edge hardware.</p>
+            <h3>MentorMate Platform Engineering</h3>
+            <p>Managed a 30+ engineer cross-functional delivery team across 8 concurrent healthcare and fintech products. Introduced CI/CD practices that reduced critical bugs by 99.9% post-release.</p>
           </div>
         </article>
 
@@ -322,13 +393,14 @@
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__card">
-            <span class="timeline__date">2023 — Present</span>
-            <h3>Senior Frontend Engineer</h3>
-            <h4>Acme Corp · San Francisco, CA</h4>
+            <span class="timeline__date">2021 — Present</span>
+            <h3>Senior Technical Program Manager</h3>
+            <h4>Oracle Health &nbsp;·&nbsp; Remote / Minneapolis, MN</h4>
             <ul>
-              <li>Led migration of legacy Angular app to React, reducing bundle size by 40%.</li>
-              <li>Mentored 3 junior engineers and ran bi-weekly code reviews.</li>
-              <li>Implemented design system adopted across 5 product teams.</li>
+              <li>Lead enterprise EHR cloud migration programs for health systems with 500–5,000 beds, managing $10M+ annual budgets and 30+ cross-functional engineers.</li>
+              <li>Own end-to-end program delivery lifecycle from discovery to hypercare, consistently achieving 99% on-time, on-budget milestones.</li>
+              <li>Partner with C-suite stakeholders to define cloud adoption roadmaps and OCI architecture governance frameworks across the Oracle Health product portfolio.</li>
+              <li>Championed adoption of SAFe Agile methodology, reducing sprint velocity variance by 40% across 8 scrum teams.</li>
             </ul>
           </div>
         </div>
@@ -336,13 +408,14 @@
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__card">
-            <span class="timeline__date">2021 — 2023</span>
-            <h3>Full-Stack Developer</h3>
-            <h4>StartupXYZ · Remote</h4>
+            <span class="timeline__date">2019 — 2021</span>
+            <h3>Program Manager</h3>
+            <h4>MentorMate &nbsp;·&nbsp; Minneapolis, MN</h4>
             <ul>
-              <li>Built and maintained a SaaS platform serving 10,000+ monthly active users.</li>
-              <li>Designed RESTful APIs with Node.js and PostgreSQL, achieving 99.9% uptime.</li>
-              <li>Integrated Stripe billing, cutting revenue reconciliation time by 70%.</li>
+              <li>Directed simultaneous delivery of 8 healthcare and fintech software products with teams of up to 30 engineers, designers, and QA specialists.</li>
+              <li>Instituted DevOps CI/CD pipelines and automated testing frameworks, cutting critical post-release defects by 99.9%.</li>
+              <li>Built and maintained client relationships generating $3M+ in ARR through renewals and upsells.</li>
+              <li>Mentored 5 associate PMs, 3 of whom were promoted to senior roles within 18 months.</li>
             </ul>
           </div>
         </div>
@@ -350,12 +423,55 @@
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__card">
-            <span class="timeline__date">2020 — 2021</span>
-            <h3>Junior Developer</h3>
-            <h4>DevAgency · Austin, TX</h4>
+            <span class="timeline__date">2017 — 2019</span>
+            <h3>Technical Program Manager</h3>
+            <h4>Anthem, Inc. &nbsp;·&nbsp; Indianapolis, IN (Remote)</h4>
             <ul>
-              <li>Delivered 8 client websites on time and within budget using React and WordPress.</li>
-              <li>Improved page load performance by 60% through lazy loading and CDN optimization.</li>
+              <li>Orchestrated the modernization of Anthem's member-facing digital platform (anthem.com + mobile), coordinating 50+ teams and a $15M program budget.</li>
+              <li>Drove integration of HL7 FHIR APIs enabling interoperability with 200+ provider systems, supporting CMS mandate compliance.</li>
+              <li>Improved member Net Promoter Score (NPS) by 28 points and reduced call center volume by 35% through digital self-service enhancements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2015 — 2017</span>
+            <h3>Program Manager</h3>
+            <h4>Surescripts &nbsp;·&nbsp; Arlington, VA (Remote)</h4>
+            <ul>
+              <li>Managed delivery of national e-prescribing network platform processing 1.5M+ daily transactions across 300M+ patient records.</li>
+              <li>Led a cross-functional team to expand network coverage to 50 new pharmacy systems, generating $10M in new ARR.</li>
+              <li>Maintained 99% uptime SLA while executing major platform releases, earning the organization's highest client satisfaction scores.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2013 — 2015</span>
+            <h3>Business Analyst &amp; Program Lead</h3>
+            <h4>Allianz Life Insurance &nbsp;·&nbsp; Golden Valley, MN</h4>
+            <ul>
+              <li>Led a $5M digital transformation initiative modernizing life insurance policy administration systems, reducing processing time by 30%.</li>
+              <li>Achieved $5M in annual operational savings through process automation and vendor consolidation.</li>
+              <li>Delivered SOX-compliant program documentation and audit trails across 6 mission-critical systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2011 — 2013</span>
+            <h3>Associate Technology Consultant</h3>
+            <h4>Towers Watson &nbsp;·&nbsp; Minneapolis, MN</h4>
+            <ul>
+              <li>Supported delivery of HR technology transformation programs for Fortune 500 clients across financial services and healthcare verticals.</li>
+              <li>Conducted requirements gathering, gap analysis, and implementation planning for HRIS and benefits administration platforms.</li>
+              <li>Recognized as top-performing consultant in the 2012 annual review cycle.</li>
             </ul>
           </div>
         </div>
@@ -363,13 +479,60 @@
         <div class="timeline__item timeline__item--edu">
           <div class="timeline__dot timeline__dot--edu"></div>
           <div class="timeline__card">
-            <span class="timeline__date">2016 — 2020</span>
-            <h3>B.S. Computer Science</h3>
-            <h4>University of Texas at Austin</h4>
+            <span class="timeline__date">2009 — 2011</span>
+            <h3>M.S. Information Technology Management</h3>
+            <h4>University of St. Thomas &nbsp;·&nbsp; St. Paul, MN</h4>
             <ul>
-              <li>GPA: 3.8 / 4.0 &mdash; Dean's List (4 semesters)</li>
-              <li>Capstone: Distributed task scheduler using Raft consensus algorithm.</li>
+              <li>Graduated with distinction — focus on IT Strategy, Project Management, and Enterprise Architecture.</li>
+              <li>Thesis: "Agile Adoption in Regulated Healthcare Environments: Barriers and Best Practices."</li>
             </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--edu">
+          <div class="timeline__dot timeline__dot--edu"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2005 — 2009</span>
+            <h3>B.S. Business Information Systems</h3>
+            <h4>Metropolitan State University &nbsp;·&nbsp; Minneapolis, MN</h4>
+            <ul>
+              <li>Dean's List — 3 consecutive years. Minor in Mathematics.</li>
+              <li>President, Association for Information Technology Professionals (AITP) campus chapter.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--cert">
+          <div class="timeline__dot timeline__dot--cert"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">Certifications &amp; Awards</span>
+            <h3>Professional Credentials</h3>
+            <div class="cert-grid">
+              <div class="cert-item">
+                <span class="cert-icon">&#127942;</span>
+                <span>Project Management Professional (PMP)</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">&#127942;</span>
+                <span>Certified Scrum Master (CSM)</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">&#9729;</span>
+                <span>Oracle Cloud Infrastructure (OCI) Foundations</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">&#127775;</span>
+                <span>ITIL v4 Foundation</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">&#128176;</span>
+                <span>Lean Six Sigma Green Belt</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">&#127881;</span>
+                <span>Oracle Health Circle of Excellence Award 2023</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -382,9 +545,24 @@
     <div class="container contact__container">
       <h2 class="section__title">Get In Touch</h2>
       <p class="contact__intro">
-        Whether you have a project in mind, a question, or just want to say hi —
-        my inbox is always open.
+        Looking to lead your next enterprise program, cloud initiative, or digital transformation?
+        Let's connect.
       </p>
+
+      <div class="contact__direct">
+        <a href="mailto:carsar.addo@email.com" class="contact__link">
+          <span class="contact__link-icon">&#9993;</span>
+          <span>carsar.addo@email.com</span>
+        </a>
+        <a href="tel:+16125550100" class="contact__link">
+          <span class="contact__link-icon">&#128222;</span>
+          <span>(612) 555-0100</span>
+        </a>
+        <a href="https://linkedin.com/in/carsaraddo" target="_blank" rel="noopener" class="contact__link">
+          <span class="contact__link-icon">&#128101;</span>
+          <span>linkedin.com/in/carsaraddo</span>
+        </a>
+      </div>
 
       <form class="contact__form" id="contactForm" novalidate>
         <div class="form__row">
@@ -401,28 +579,28 @@
         </div>
         <div class="form__group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+          <input type="text" id="subject" name="subject" placeholder="Program Manager opportunity / collaboration" />
         </div>
         <div class="form__group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your program or initiative..." required></textarea>
           <span class="form__error" id="messageError"></span>
         </div>
         <button type="submit" class="btn btn--primary btn--wide" id="submitBtn">
           Send Message
         </button>
-        <p class="form__success" id="formSuccess">Thanks! I'll get back to you soon.</p>
+        <p class="form__success" id="formSuccess">Thanks! I'll get back to you within 24 hours.</p>
       </form>
 
       <div class="contact__socials">
-        <a href="#" aria-label="GitHub" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="#" aria-label="LinkedIn" class="social-link">
+        <a href="https://linkedin.com/in/carsaraddo" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="#" aria-label="Twitter / X" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <a href="mailto:carsar.addo@email.com" aria-label="Email" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://github.com/carsaraddo" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
         </a>
       </div>
     </div>
@@ -430,7 +608,7 @@
 
   <!-- ── Footer ── -->
   <footer class="footer">
-    <p>Designed &amp; built by Alex Rivera &copy; <span id="year"></span></p>
+    <p>Designed &amp; built with care &nbsp;·&nbsp; Carsar Addo &copy; <span id="year"></span></p>
   </footer>
 
   <button class="scroll-top" id="scrollTop" aria-label="Back to top">&#8593;</button>
