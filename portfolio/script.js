@@ -1,8 +1,10 @@
-/* ── Nav: scroll shadow + hamburger ─────────────────────────── */
-const nav       = document.getElementById('nav');
-const hamburger = document.getElementById('hamburger');
-const navLinks  = document.querySelector('.nav__links');
+/* ── DOM refs ───────────────────────────────────────────────── */
+const nav         = document.getElementById('nav');
+const hamburger   = document.getElementById('hamburger');
+const navLinks    = document.querySelector('.nav__links');
+const scrollTopBtn = document.getElementById('scrollTop');
 
+/* ── Nav: scroll shadow + hamburger ─────────────────────────── */
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
   scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
@@ -194,7 +196,6 @@ form.addEventListener('submit', (e) => {
 });
 
 /* ── Scroll-to-top button ───────────────────────────────────── */
-const scrollTopBtn = document.getElementById('scrollTop');
 scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
