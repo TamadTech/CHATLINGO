@@ -543,6 +543,116 @@ img { max-width: 100%; display: block; }
 .project-card__body h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
 .project-card__body p { font-size: 0.875rem; color: var(--clr-muted); line-height: 1.6; }
 
+/* ── Personal Projects ──────────────────────────────────────── */
+.section__subtitle {
+  text-align: center;
+  color: var(--clr-muted);
+  margin-top: -2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.personal-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.personal-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--trans), box-shadow var(--trans);
+  display: flex;
+  flex-direction: column;
+}
+.personal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+
+.personal-card__header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+.personal-card__header--1 {
+  background: linear-gradient(135deg, #0d2137, #0e3a5e);
+  border-bottom: 1px solid rgba(88,166,255,.2);
+}
+.personal-card__header--2 {
+  background: linear-gradient(135deg, #1a0d37, #3a1a6e);
+  border-bottom: 1px solid rgba(188,140,255,.2);
+}
+.personal-card__header--3 {
+  background: linear-gradient(135deg, #0d2e1a, #0e5e3a);
+  border-bottom: 1px solid rgba(63,185,80,.2);
+}
+
+.personal-card__icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,.25));
+}
+.personal-card__live { flex-shrink: 0; }
+
+.personal-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+.personal-card__name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--clr-text), var(--clr-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.personal-card__tagline {
+  font-size: 0.85rem;
+  color: var(--clr-accent);
+  font-family: var(--ff-mono);
+  font-weight: 500;
+}
+.personal-card__desc {
+  font-size: 0.875rem;
+  color: var(--clr-muted);
+  line-height: 1.65;
+}
+
+.personal-card__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+.highlight-pill {
+  font-size: 0.75rem;
+  background: rgba(88,166,255,.08);
+  border: 1px solid rgba(88,166,255,.2);
+  color: var(--clr-text);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.personal-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--clr-border);
+}
+
 /* ── Timeline ───────────────────────────────────────────────── */
 .timeline {
   position: relative;

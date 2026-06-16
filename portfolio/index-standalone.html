@@ -550,6 +550,116 @@ img { max-width: 100%; display: block; }
 .project-card__body h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
 .project-card__body p { font-size: 0.875rem; color: var(--clr-muted); line-height: 1.6; }
 
+/* ── Personal Projects ──────────────────────────────────────── */
+.section__subtitle {
+  text-align: center;
+  color: var(--clr-muted);
+  margin-top: -2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.personal-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.personal-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--trans), box-shadow var(--trans);
+  display: flex;
+  flex-direction: column;
+}
+.personal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+
+.personal-card__header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+.personal-card__header--1 {
+  background: linear-gradient(135deg, #0d2137, #0e3a5e);
+  border-bottom: 1px solid rgba(88,166,255,.2);
+}
+.personal-card__header--2 {
+  background: linear-gradient(135deg, #1a0d37, #3a1a6e);
+  border-bottom: 1px solid rgba(188,140,255,.2);
+}
+.personal-card__header--3 {
+  background: linear-gradient(135deg, #0d2e1a, #0e5e3a);
+  border-bottom: 1px solid rgba(63,185,80,.2);
+}
+
+.personal-card__icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,.25));
+}
+.personal-card__live { flex-shrink: 0; }
+
+.personal-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+.personal-card__name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--clr-text), var(--clr-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.personal-card__tagline {
+  font-size: 0.85rem;
+  color: var(--clr-accent);
+  font-family: var(--ff-mono);
+  font-weight: 500;
+}
+.personal-card__desc {
+  font-size: 0.875rem;
+  color: var(--clr-muted);
+  line-height: 1.65;
+}
+
+.personal-card__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+.highlight-pill {
+  font-size: 0.75rem;
+  background: rgba(88,166,255,.08);
+  border: 1px solid rgba(88,166,255,.2);
+  color: var(--clr-text);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.personal-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--clr-border);
+}
+
 /* ── Timeline ───────────────────────────────────────────────── */
 .timeline {
   position: relative;
@@ -794,6 +904,7 @@ img { max-width: 100%; display: block; }
     <ul class="nav__links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#programs">Programs</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="nav__cta">Contact</a></li>
@@ -1001,8 +1112,96 @@ img { max-width: 100%; display: block; }
     </div>
   </section>
 
+  <!-- ── Personal Projects ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__title">Personal Projects</h2>
+      <p class="section__subtitle">AI-native products I designed and built — combining my PM background with hands-on product development.</p>
+
+      <div class="personal-projects__grid">
+
+        <div class="personal-card">
+          <div class="personal-card__header personal-card__header--1">
+            <div class="personal-card__icon">&#128196;</div>
+            <div class="personal-card__live">
+              <a href="https://pensow.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
+            </div>
+          </div>
+          <div class="personal-card__body">
+            <h3 class="personal-card__name">Pensow</h3>
+            <p class="personal-card__tagline">AI document generation for business-ready output</p>
+            <p class="personal-card__desc">Turns a short brief into polished, client-ready documents across 31 types — SOWs, contracts, proposals, risk registers, and more — exported straight to Word or PDF. Built for consultants, TPMs, and freelancers who need real deliverables, not rough AI drafts.</p>
+            <div class="personal-card__highlights">
+              <span class="highlight-pill">&#127381; 31 document types</span>
+              <span class="highlight-pill">&#128196; Word &amp; PDF export</span>
+              <span class="highlight-pill">&#9889; Gemini 2.5 Flash</span>
+            </div>
+            <div class="personal-card__stack">
+              <span class="tag tag--sm">React</span>
+              <span class="tag tag--sm">Vite</span>
+              <span class="tag tag--sm">Gemini 2.5 Flash</span>
+              <span class="tag tag--sm">DOCX / PDF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-card">
+          <div class="personal-card__header personal-card__header--2">
+            <div class="personal-card__icon">&#128202;</div>
+            <div class="personal-card__live">
+              <a href="https://www.sightlinepm.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
+            </div>
+          </div>
+          <div class="personal-card__body">
+            <h3 class="personal-card__name">SightLinePM</h3>
+            <p class="personal-card__tagline">AI PMO intelligence for mid-market teams</p>
+            <p class="personal-card__desc">Reads across a project portfolio — Jira boards, status updates, resource feeds — and produces the executive briefings, risk alerts, and resource heatmaps a small PMO doesn't have time to assemble. Built for PMO directors at 200–2,000-person companies who need enterprise-grade rigor without an enterprise sales cycle.</p>
+            <div class="personal-card__highlights">
+              <span class="highlight-pill">&#128680; Risk alerts</span>
+              <span class="highlight-pill">&#128101; Resource heatmaps</span>
+              <span class="highlight-pill">&#128196; Executive briefings</span>
+            </div>
+            <div class="personal-card__stack">
+              <span class="tag tag--sm">React</span>
+              <span class="tag tag--sm">Vite</span>
+              <span class="tag tag--sm">Supabase</span>
+              <span class="tag tag--sm">Jira API</span>
+              <span class="tag tag--sm">Azure DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-card">
+          <div class="personal-card__header personal-card__header--3">
+            <div class="personal-card__icon">&#127908;</div>
+            <div class="personal-card__live">
+              <a href="https://www.scribemagician.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
+            </div>
+          </div>
+          <div class="personal-card__body">
+            <h3 class="personal-card__name">ScribeMagician</h3>
+            <p class="personal-card__tagline">AI meeting transcription that produces artifacts, not just notes</p>
+            <p class="personal-card__desc">Records meetings, transcribes them in real time, and converts the transcript into usable outputs — summaries, action items, and follow-up emails. Acts as the capture front-end in a larger workflow, feeding structured content into SightLinePM's intelligence engine.</p>
+            <div class="personal-card__highlights">
+              <span class="highlight-pill">&#127897; Live transcription</span>
+              <span class="highlight-pill">&#9989; Action items</span>
+              <span class="highlight-pill">&#128279; SightLinePM pipeline</span>
+            </div>
+            <div class="personal-card__stack">
+              <span class="tag tag--sm">React</span>
+              <span class="tag tag--sm">Vite</span>
+              <span class="tag tag--sm">Supabase</span>
+              <span class="tag tag--sm">Live Transcription</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ── Programs ── -->
-  <section class="section" id="programs">
+  <section class="section section--alt" id="programs">
     <div class="container">
       <h2 class="section__title">Programs &amp; Initiatives</h2>
 
