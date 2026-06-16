@@ -22,6 +22,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 /* ── Typed-text hero effect ─────────────────────────────────── */
 const phrases = [
   'Senior Program Manager',
+  'Senior Project Manager',
   'PMP-Certified Leader',
   'Cloud & AI Specialist',
   'Agile Practitioner',
