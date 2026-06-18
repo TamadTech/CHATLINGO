@@ -879,6 +879,9 @@ img { max-width: 100%; display: block; }
   .about__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .about__stats { grid-template-columns: 1fr 1fr; }
 
+  .about__facts li { display: flex; flex-direction: column; gap: 0.15rem; word-break: break-word; overflow-wrap: anywhere; }
+  .fact__label { min-width: 0; }
+
   .form__row { grid-template-columns: 1fr; }
 
   .timeline { padding-left: 1.75rem; }
