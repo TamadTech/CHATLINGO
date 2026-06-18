@@ -239,22 +239,6 @@ img { max-width: 100%; display: block; }
 .badge--oci  { background: rgba(63,185,80,.15);   border-color: rgba(63,185,80,.4);   color: var(--clr-success); }
 .badge--itil { background: rgba(255,180,60,.15);  border-color: rgba(255,180,60,.4);  color: #f0a030; }
 
-/* floating emojis */
-.hero__float {
-  position: absolute;
-  font-size: 1.6rem;
-  animation: floatBob 4s ease-in-out infinite;
-  pointer-events: none;
-  opacity: 0.85;
-}
-.hero__float--1 { top: 10%; right: 5%;  animation-delay: 0s; }
-.hero__float--2 { bottom: 20%; right: 8%; animation-delay: 1.3s; }
-.hero__float--3 { top: 50%; right: -2%; animation-delay: 2.6s; }
-@keyframes floatBob {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50%       { transform: translateY(-12px) rotate(8deg); }
-}
-
 /* hero visual */
 .hero__visual {
   display: flex;
