@@ -601,8 +601,19 @@ img { max-width: 100%; display: block; }
 }
 
 .personal-card__icon {
-  font-size: 2.5rem;
-  filter: drop-shadow(0 0 12px rgba(255,255,255,.25));
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-card__icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
 }
 .personal-card__live { flex-shrink: 0; }
 
@@ -1278,7 +1289,7 @@ img { max-width: 100%; display: block; }
 
         <div class="personal-card">
           <div class="personal-card__header personal-card__header--1">
-            <div class="personal-card__icon">&#128196;</div>
+            <div class="personal-card__icon"><img src="assets/pensow-logo.png" alt="Pensow logo" class="personal-card__icon-img" /></div>
             <div class="personal-card__live">
               <a href="https://pensow.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
             </div>
@@ -1303,7 +1314,7 @@ img { max-width: 100%; display: block; }
 
         <div class="personal-card">
           <div class="personal-card__header personal-card__header--2">
-            <div class="personal-card__icon">&#128202;</div>
+            <div class="personal-card__icon"><img src="assets/sightlinepm-logo.png" alt="SightLinePM logo" class="personal-card__icon-img" /></div>
             <div class="personal-card__live">
               <a href="https://www.sightlinepm.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
             </div>
@@ -1329,7 +1340,7 @@ img { max-width: 100%; display: block; }
 
         <div class="personal-card">
           <div class="personal-card__header personal-card__header--3">
-            <div class="personal-card__icon">&#127908;</div>
+            <div class="personal-card__icon"><img src="assets/scribemagician-logo.webp" alt="ScribeMagician logo" class="personal-card__icon-img" /></div>
             <div class="personal-card__live">
               <a href="https://www.scribemagician.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Site &#8599;</a>
             </div>
