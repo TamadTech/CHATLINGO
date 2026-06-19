@@ -152,11 +152,15 @@ img { max-width: 100%; display: block; }
 .nav__hamburger {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
 }
 .nav__hamburger span {
   display: block;

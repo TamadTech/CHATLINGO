@@ -159,11 +159,15 @@ img { max-width: 100%; display: block; }
 .nav__hamburger {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
 }
 .nav__hamburger span {
   display: block;
@@ -923,7 +927,7 @@ img { max-width: 100%; display: block; }
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="nav__cta">Contact</a></li>
     </ul>
-    <button class="nav__hamburger" aria-label="Toggle menu" id="hamburger">
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -1603,12 +1607,16 @@ window.addEventListener('scroll', () => {
 });
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
 });
 
 // close mobile menu on link click
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
 });
 
 /* ── Typed-text hero effect ─────────────────────────────────── */

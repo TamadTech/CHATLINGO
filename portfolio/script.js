@@ -11,12 +11,16 @@ window.addEventListener('scroll', () => {
 });
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
 });
 
 // close mobile menu on link click
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
 });
 
 /* ── Typed-text hero effect ─────────────────────────────────── */
