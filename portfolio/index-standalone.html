@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
+  <noscript><meta http-equiv="refresh" content="0; url=../" /></noscript>
 </head>
 <body>
-  <script>window.location.replace('../' + window.location.hash);</script>
-  <noscript><meta http-equiv="refresh" content="0; url=../" /></noscript>
+  <script>
+    var h = window.location.hash;
+    window.location.replace('../' + (/^#[\w-]*$/.test(h) ? h : ''));
+  </script>
 </body>
 </html>
